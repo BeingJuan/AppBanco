@@ -9,7 +9,7 @@ package Modelo;
  * @author JuanA
  */
 
-public class Cuenta {
+public class Cuenta {   
 
     private String numero;
     private String nombreDueno;
