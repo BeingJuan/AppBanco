@@ -12,31 +12,31 @@ package Modelo;
 public class Cuenta {   
 
     private String numero;
-    private String nombreDueno;
-    private int dia, mes, anio;
+    private String nombreDueño;
+    private int dia, mes, año;
     protected double saldo;
 
-    public Cuenta(String numero, String nombreDueno, int dia, int mes, int anio) {
+    public Cuenta(String numero, String nombreDueño, int dia, int mes, int año) {
         this.numero      = numero;
-        this.nombreDueno = nombreDueno;
+        this.nombreDueño = nombreDueño;
         this.dia         = dia;
         this.mes         = mes;
-        this.anio        = anio;
+        this.año        = año;
         this.saldo       = 0;
     }
 
     public String getNumero()      { return numero; }
-    public String getNombreDueno() { return nombreDueno; }
+    public String getNombreDueno() { return nombreDueño; }
     public int getDia()            { return dia; }
     public int getMes()            { return mes; }
-    public int getAnio()           { return anio; }
+    public int getAño()           { return año; }
     public double getSaldo()       { return saldo; }
 
     public void setNumero(String numero)           { this.numero = numero; }
-    public void setNombreDueno(String nombreDueno) { this.nombreDueno = nombreDueno; }
+    public void setNombreDueño(String nombreDueno) { this.nombreDueño = nombreDueno; }
     public void setDia(int dia)                    { this.dia = dia; }
     public void setMes(int mes)                    { this.mes = mes; }
-    public void setAnio(int anio)                  { this.anio = anio; }
+    public void setAño(int año)                  { this.año = año; }
 
     public void consignar(double valor) {
         saldo += valor;
@@ -60,8 +60,8 @@ public class Cuenta {
     @Override
     public String toString() {
         return "Número: " + numero +
-               " | Dueño: " + nombreDueno +
-               " | Apertura: " + dia + "/" + mes + "/" + anio +
+               " | Dueño: " + nombreDueño +
+               " | Apertura: " + dia + "/" + mes + "/" + año +
                " | Saldo: $" + saldo;
     }
 }
